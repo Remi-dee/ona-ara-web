@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,38 +12,39 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#vision', label: 'Vision' },
-    { href: '#mission', label: 'Mission' },
-    { href: '#values', label: 'Core Values' },
-    { href: '#objectives', label: 'Objectives' },
+    { href: "#home", label: "Home" },
+    { href: "#vision", label: "Vision" },
+    { href: "#mission", label: "Mission" },
+    { href: "#values", label: "Core Values" },
+    { href: "#objectives", label: "Objectives" },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md ${
         isScrolled
-          ? 'bg-white/85 shadow-lg py-3 border-b border-white/20'
-          : 'bg-white/70 py-4'
+          ? "bg-white/85 shadow-lg py-3 border-b border-white/20"
+          : "bg-white/70 py-4"
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link
-            href="#home"
-            className="flex items-center space-x-3 group"
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white px-4 py-2 rounded-lg font-bold text-xl shadow-md group-hover:shadow-lg transition-shadow">
-                OAPCC
-              </div>
+          <Link href="#home" className="flex items-center space-x-3 group">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0">
+              <Image
+                src="/logo.jpg?v=2"
+                alt="Ona Ara Pentecostal Church Logo"
+                fill
+                className="object-contain"
+                priority
+                unoptimized
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg font-semibold text-slate-800">Ona Ara</h1>
@@ -109,4 +111,3 @@ export default function Header() {
     </header>
   );
 }
-
