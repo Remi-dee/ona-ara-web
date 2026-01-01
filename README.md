@@ -30,7 +30,8 @@ A modern, responsive website for Ona Ara Pentecostal Church built with Next.js, 
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ## 🚀 Getting Started
@@ -38,12 +39,14 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Remi-dee/ona-ara-web.git
 cd ona-ara-web
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -95,20 +98,24 @@ ona-ara-web/
 ## 🎯 Sections
 
 ### Home (Hero)
+
 - Welcome section with church name and tagline
 - Animated background bubbles
 - Call-to-action buttons
 
 ### Vision
+
 - Vision statement
 - Scripture reference (Jeremiah 29:11)
 
 ### Mission
+
 - Mission statement
 - Three pillars: Global Reach, Bible-Centered, Spirit-Led
 - Scripture reference (Matthew 28:19)
 
 ### Core Values (OAPCC)
+
 - **O** - Obedience to God's Word
 - **A** - Alignment with The Will of God
 - **P** - Purpose-Driven Church With
@@ -116,6 +123,7 @@ ona-ara-web/
 - **C** - Centre of Our Message
 
 ### Objectives
+
 1. To make eternity our priority (John 17:3)
 2. To worship God in spirit and truth (John 4:24)
 3. To win the souls of the lost (Mark 16:15)
@@ -136,6 +144,7 @@ The easiest way to deploy is using [Vercel](https://vercel.com):
 ### Other Platforms
 
 This Next.js app can be deployed on any platform that supports Node.js:
+
 - Netlify
 - AWS Amplify
 - Railway
@@ -167,6 +176,7 @@ Edit the color variables in `app/globals.css`:
 ### Content
 
 Update the content in the respective component files:
+
 - `components/VisionSection.tsx` - Vision statement
 - `components/MissionSection.tsx` - Mission statement
 - `components/CoreValuesSection.tsx` - Core values
@@ -184,7 +194,7 @@ This project is private and intended for Ona Ara Pentecostal Church use.
 
 **Ona Ara Pentecostal Church (OAPCC)**
 
-*Raising men and women of Godly character in all spheres of life all over the world.*
+_Raising men and women of Godly character in all spheres of life all over the world._
 
 **Vision**: Raising men and women of Godly character in all spheres of life all over the world.
 
